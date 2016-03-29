@@ -5,10 +5,10 @@
 makeCacheMatrix <- function(x = matrix()) {
   y <- NULL
   z <- NULL
+
   z <<- x
   y <<- solve(x)
-  
-  y
+
 
 }
 
@@ -26,5 +26,6 @@ cacheSolve <- function(x, ...) {
   
   
   t <- makeCacheMatrix(x)  
+  return(y)
   
 }
